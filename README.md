@@ -146,7 +146,7 @@ b.  **PDF Reports:**
 *   `configs/`: (Recommended) Directory for `ArenaStage` YAML/JSON configuration files.
 *   `outputs/`: Default directory for all generated logs, reports, and checkpoints.
 
-## Results (Illustrative)
+## Results
 
 Initial experiments with a Qwen3-14B model on debate-style report generation show promising learning trends.
 
@@ -163,7 +163,7 @@ Initial experiments with a Qwen3-14B model on debate-style report generation sho
 *   **Enhanced Web Search Tool**: Improve robustness, result diversity, and content extraction.
 *   **Longer Generation Sequences**: Support more extensive research and report generation.
 *   **Expanded Toolset**: Integrate calculators, code interpreters, database query tools.
-*   **Diverse Applications**: Test on more complex scenarios (e.g., scientific or medical research report drafting, with appropriate ethical considerations and human oversight).
+*   **Diverse Applications**: Test on more complex scenarios (e.g., scientific or medical research report).
 *   **Advanced Evaluation**: Explore more nuanced reward signals and interactive judging.
 
 ## Citation
