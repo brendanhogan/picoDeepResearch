@@ -171,7 +171,7 @@ Initial experiments with a Qwen3-14B model on debate-style report generation sho
 If you find `picoDeepResearch` useful in your work, please consider citing it:
 
 ```bibtex
-@software{YourName_picoDeepResearch_YYYY,
+@software{brendanhogan_picoDeepResearch_2025,
   author       = {Brendan Hogan},
   title        = {picoDeepResearch: A Framework for Training LLM Agents with Tool Use and GRPO},
   month        = {May},
