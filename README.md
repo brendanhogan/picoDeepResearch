@@ -4,9 +4,9 @@
   <img src="imgs/picoDRLogo.png" alt="picoDeepResearch Logo" width="300"/>
 </p>
 
-## Overview: A Pico Recreation of OpenAI's Deep Research
+## Overview: A pico Recreation of OpenAI's Deep Research
 
-`picoDeepResearch` is a framework for training LLMs to iteratively use tools and synthesize information into research reports, inspired by OpenAI's Deep Research. It integrates several key concepts: principled/rubric-based LLM judging, self-play, multi-turn tool use, and GRPO (Generalized Reinforcement Policy Optimization).
+`picoDeepResearch` is a framework for training LLMs to iteratively use tools and synthesize information into research reports, inspired by OpenAI's Deep Research. It integrates several key concepts: principled/rubric-based LLM judging, self-play, multi-turn tool use, and GRPO.
 
 Specifically, given a set of research questions, a suite of tools (initially, basic web search), and a list of principles for evaluation, the training process goes as follows: The LLM generates multiple research reports on the same subject, incorporating tool use in its reasoning and synthesizing the findings into a final report. Then, these reports are judged in a round-robin tournament (or "battle royale" in the "arena") according to the provided principles. The GRPO reward signal is comes from the final tournament rankings, which, when propagated to the model, improve its ability to produce quality Deep Research reports, thereby reinforcing the specific patterns of tool use employed by the model.
 
@@ -24,7 +24,7 @@ Our aim is to provide a transparent and adaptable framework for exploring how LL
 
 ## Motivation: From GRPO Curious to Deep Research Architect
 
-Like many, I've been very interested in the potential of GRPO for training LLMs. I started with experiments in frameworks like [DeepSeekRL-Extended](https://github.com/brendanhogan/DeepSeekRL-Extended), where I explored everything from standard math datasets to the more creative tasks of AI-generated debates and comedy, and into multi-modal tasks. While these were more explorations than breakthroughs, a particularly compelling idea emerged: the "battle royale" or round-robin tournament for judging.
+Like many people, I've been very interested in the potential of GRPO for training LLMs. I started with experiments in frameworks like [DeepSeekRL-Extended](https://github.com/brendanhogan/DeepSeekRL-Extended), where I explored everything from standard math datasets to the more creative tasks of AI-generated debates and comedy, and into multi-modal tasks. While these were more explorations than breakthroughs, a particularly compelling idea emerged: the "battle royale" or round-robin tournament for judging.
 
 Consider AI debates: instead of one LLM judge trying to rank, say, 16 debates simultaneously (noisy), what if every possible pair of debates went head-to-head? This pairwise comparison, especially when augmented by an LLM judge using an on-the-fly, generatively created rubric (a technique I've explored with DeepSeek's reward models), proved surprisingly effective.
 
