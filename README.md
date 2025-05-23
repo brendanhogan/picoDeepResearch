@@ -151,17 +151,12 @@ b.  **PDF Reports:**
 Initial experiments with a Qwen3-14B model on debate-style report generation show promising learning trends.
 
 **Win Rate vs GPT-4o-Mini (Debate Reports - Qwen3-14B)**
-*(Based on LLM-as-Judge using a custom rubric)*
+![Win Rate Chart](imgs/example_test_win_rate.png)
 
-![Win Rate Chart Placeholder](imgs/win_rate_vs_gpt4omini.png)
-*(Caption: Illustrative chart: win/loss/tie rates of the trained model against a baseline like GPT-4o-Mini.)*
 
 **Tool Usage During Training**
 
-![Tool Calling Plot Placeholder](imgs/tool_calling_plot.png)
-*(Caption: Illustrative chart: average tool calls per episode, showing how the model's reliance on tools evolves.)*
-
-These are preliminary; rigorous benchmarking is ongoing.
+![Tool Calling Plot Placeholder](imgs/example_tool_use.png)
 
 ## Future Plans
 
